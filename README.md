@@ -1,2 +1,2 @@
 # Odin_Projects
-PROJECTS
+All of the projects from "The Odin Project" course
