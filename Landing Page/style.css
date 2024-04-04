@@ -17,9 +17,15 @@ body {
     justify-content: space-between;
     flex: 1;
     margin: 0 19%;
-
 }
-
+.footer{
+    background-color: #1F2937;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:40px;
+}
 .links,
 .underHero {
     font-size: 18px;
@@ -129,4 +135,32 @@ ul {
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
+}
+.ctaSection{
+    margin: 100px 19%;
+    display: flex;
+    padding:50px 100px;
+    background-color: #3882F6;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.button2{
+    border: 2px solid white;
+    color:white;
+    background-color: transparent;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 7px 30px;
+    font-size: 18px;
+}
+.ctaText{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.ctaText .ctaSubTxt{
+    font-size:18px;
+    font-weight: normal;
+    color:#F9FAF8;
 }
