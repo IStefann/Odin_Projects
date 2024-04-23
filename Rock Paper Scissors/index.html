@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors Game!</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
-<body style="background-color:rgb(124, 124, 89)">
-    <h1 style="text-align: center; font-family:Arial; color:white">The game is played inside the console! (Press F12)</h1>
+<body>
+    <div class="header">Play Rock Paper Scissors against your device</div>
+    <div class="underHeader">First to 5 points wins!</div>
+
+    <div class="choices">
+        <button class="btn" id="1">Rock</button>
+        <button class="btn" id="2">Paper</button>
+        <button class="btn" id="3">Scissors</button>
+    </div>
+    <div class="result">Computer chose: Rock!</div>
+    <div class="scores">
+        <div class="playerScore">Player's score:</div>
+        <div style="color:black">|</div>
+        <div class="pcScore">Computer's score:</div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
