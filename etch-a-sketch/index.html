@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online etch a sketch</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header">Etch a sketch!</div>
+    <div class="options">
+        <div>
+            <div id="gridSize">Grid Size: 16 x 16</div>
+            <div class="slidecontainer">
+                <input type="range" min="2" max="100" value="16" class="slider" id="gridSize">
+            </div>
+        </div>
+        <div>
+            <div>Brush Color:</div>
+            <div style="text-align: center;"><input type="color" class="color"></div>
+        </div>
+        <div>
+            <button class="btn" onclick="rainbowColors()">Rainbow Colors</button>
+        </div>
+        <div>
+            <input type="checkbox" class="eraser"/> Eraser
+        </div>
+    </div>
+    <div class="grid" draggable="false"></div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
