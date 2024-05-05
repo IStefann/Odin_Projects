@@ -1,17 +1,33 @@
 body {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
 }
 .main {
-  display: flex;
-  justify-content: left;
-  align-items: center;
+	display: flex;
+	justify-content: left;
 }
 .imageContainer {
-  max-width: 45vw;
-  height: 100vh;
+	background-image: url(./image.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 40vw;
+	height: 100vh;
+}
+.imageTxt {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40vh;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #1ec1f5;
+	font-size: 2rem;
+	gap: 10px;
+	height: 120px;
+	font-weight: bold;
+	font-style: italic;
 }
 .img {
-  width: 100%;
-  height: 100%;
+	height: 80%;
 }
