@@ -1,0 +1,17 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.main {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.imageContainer {
+  max-width: 45vw;
+  height: 100vh;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
