@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+		<link href="https://fonts.cdnfonts.com/css/agency-fb" rel="stylesheet" />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Sign up form</title>
@@ -11,14 +9,56 @@
 	</head>
 
 	<body>
-		<div class="main">
-			<div class="imageContainer">
-				<div class="imageTxt"><img class="img" src="./logo.png" alt="logo" />DIVE IN</div>
-			</div>
-			<div class="formContainer">
-				<form>
-          
-        </form>
+		<div class="zoom">
+			<div class="main">
+				<div class="imageContainer">
+					<div class="imageTxt"><img class="img" src="./logo.png" alt="logo" />DIVE IN</div>
+				</div>
+				<div class="formContainer">
+					<form>
+						<div class="header">Unleash Your Inner Explorer <span class="underHeader"> Dive Deep, Swim Safe</span></div>
+						<div class="inputs">
+							<div class="rows">
+								<div>
+									<div>First name:</div>
+									<input type="text" id="firstName" required />
+								</div>
+								<div>
+									<div>Last name:</div>
+									<input type="text" id="lastName" required/>
+								</div>
+							</div>
+							<div class="rows">
+								<div>
+									<div>Email:</div>
+									<input type="email" id="email"/>
+								</div>
+							</div>
+							<div class="rows">
+								<div>
+									<div>Phone number:</div>
+									<input type="text" id="phone"/>
+								</div>
+							</div>
+							<div class="rows">
+								<div>
+									<div>Password:</div>
+									<input type="text" id="password" required />
+								</div>
+							</div>
+							<div class="rows">
+								<div>
+									<div>Confirm password:</div>
+									<input type="text" id="passwordConfrim" required/>
+								</div>
+							</div>
+						</div>
+						<div style="text-align: center">
+							<button type="submit">Sign up</button>
+							<div class="haveAcc">Already have an account? <span class="link">Sign in</span></div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 		<script src="script.js"></script>
