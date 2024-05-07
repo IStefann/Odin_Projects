@@ -53,3 +53,23 @@ body {
     justify-content: center;
     padding: 15px 0;
 }
+
+@media (max-width:1000px)
+{
+	.links{
+		flex-direction: column;
+	}
+	.header {
+		text-align: center;
+		display: block;
+		font-size: 2rem;
+		margin-bottom: 20px;
+		height: auto;
+	}
+	img{
+		display: none;
+	}
+	.footer{
+		margin-top: 50px;
+	}
+}
