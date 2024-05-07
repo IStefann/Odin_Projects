@@ -20,39 +20,40 @@
 						<div class="inputs">
 							<div class="rows">
 								<div>
-									<div>First name:</div>
-									<input type="text" id="firstName" required />
+									<div>*First name:</div>
+									<input autocomplete="off" type="text" id="firstName" required />
 								</div>
 								<div>
-									<div>Last name:</div>
-									<input type="text" id="lastName" required/>
+									<div>*Last name:</div>
+									<input autocomplete="off" type="text" id="lastName" required />
 								</div>
 							</div>
 							<div class="rows">
 								<div>
 									<div>Email:</div>
-									<input type="email" id="email"/>
+									<input autocomplete="off" type="email" id="email" />
 								</div>
 							</div>
 							<div class="rows">
 								<div>
 									<div>Phone number:</div>
-									<input type="text" id="phone"/>
+									<input autocomplete="off" type="text" id="phone" />
 								</div>
 							</div>
 							<div class="rows">
 								<div>
-									<div>Password:</div>
-									<input type="text" id="password" required />
+									<div>*Password:</div>
+									<input autocomplete="off" type="password" id="password" required />
 								</div>
 							</div>
 							<div class="rows">
 								<div>
-									<div>Confirm password:</div>
-									<input type="text" id="passwordConfrim" required/>
+									<div>*Confirm password:</div>
+									<input autocomplete="off" type="password" id="passwordConfirm" required />
 								</div>
 							</div>
 						</div>
+						<div class="noMatch disable">Passwords do not match!</div>
 						<div style="text-align: center">
 							<button type="submit">Sign up</button>
 							<div class="haveAcc">Already have an account? <span class="link">Sign in</span></div>
