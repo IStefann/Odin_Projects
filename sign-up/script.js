@@ -7,7 +7,6 @@ form.addEventListener("submit", (event) => {
 	let pass = document.querySelector("#password");
 	let passConfirm = document.querySelector("#passwordConfirm");
 	if (pass.value !== passConfirm.value) {
-		window.alert("Passwords do not match!");
 		event.preventDefault();
 		pass.classList.add("invalid");
 		passConfirm.classList.add("invalid");
