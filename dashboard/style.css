@@ -5,7 +5,7 @@ body {
 	--light-blue: #9db2bf;
 	--bright: #dde6ed;
 	background-color: #27374dd8;
-    font-family: "Roboto", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 * {
 	margin: 0;
@@ -28,38 +28,65 @@ body {
 	margin: 20px 20px 20px 0;
 	grid-column: 2/4;
 	display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
 	align-items: center;
 	padding: 0px 15px;
 }
 .user {
-    display: flex;
-    align-items: center;
-    gap:5px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
 }
 .header img {
 	height: 50px;
 }
-.icons{
-    display: flex;
-    align-items: center;
-    gap:15px;
+.icons {
+	display: flex;
+	align-items: center;
+	gap: 15px;
 }
-.icons img{
-    height: 35px;
-    cursor:pointer;
-    display: block;
+.icons img, .sidebar img {
+	height: 35px;
+	cursor: pointer;
 }
-.icons > div{
-    display: flex;
-    align-items: center;
-    gap:5px;
-    cursor: pointer;
+.icons > div {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	cursor: pointer;
 }
 .sidebar {
 	border-radius: 0;
 	grid-row: 1/4;
 	grid-column: 1/2;
+	display: grid;
+	grid-template-rows: 130px 1fr 130px;
+	padding-left: 10px;
+}
+.sideMain{
+	display: flex;
+	align-items: center;
+	font-size: 2.5rem;
+	font-weight: bold;
+	padding-right: 30px;
+}
+.sideItems{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.sideItem{
+	display: flex;
+	gap: 10px;
+	padding: 5px 5px;
+	align-items: center;
+	border-radius: 0;
+	cursor:pointer;
+}
+.sideItem:hover{
+	background-color: rgba(72, 94, 126, 0.856);
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 .analytics {
 	grid-column: 2/3;
@@ -75,7 +102,7 @@ body {
 	margin-bottom: 20px;
 }
 .other {
-    background-color:transparent;
+	background-color: transparent;
 	margin: 0 20px 20px 0;
 	grid-column: 3/4;
 	grid-row: 2/4;
