@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Admin dashboard</title>
 		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
+		<div class="container">
+			<div class="header">
+				<div class="user">
+					<div><img src="./img/account.svg" alt="Profile" /></div>
+					<div>
+						<p>User name</p>
+						<p style="padding-top: 5px; font-size: 0.8rem;">Admin</p>
+					</div>
+				</div>
+				<div class="icons"><div><img src="./img/language.svg" alt="language">English</div><img src="./img/search.svg" alt="Search"><img src="./img/chat.svg" alt="Chat"><img src="./img/mail.svg" alt="Mail"><img src="./img/light.svg" alt="Light"></div>
+			</div>
+			<div class="sidebar"></div>
+			<div class="analytics"></div>
+			<div class="table"></div>
+			<div class="other">
+				<div class="content"></div>
+				<div class="content"></div>
+			</div>
+			<div class="footer"></div>
+		</div>
 		<script src="./script.js"></script>
 	</body>
 </html>
