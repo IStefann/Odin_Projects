@@ -14,8 +14,8 @@ body {
 }
 .container {
 	display: grid;
-	grid-template-columns: 0.8fr 3fr 1fr;
-	grid-template-rows: 1fr 3fr 3fr 0.4fr;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 1fr 1.5fr 3fr 0.4fr;
 	height: 100%;
 	column-gap: 20px;
 	margin-bottom: 20px;
@@ -45,7 +45,8 @@ body {
 	align-items: center;
 	gap: 15px;
 }
-.icons img, .sidebar img {
+.icons img,
+.sidebar img {
 	height: 35px;
 	cursor: pointer;
 }
@@ -63,27 +64,27 @@ body {
 	grid-template-rows: 130px 1fr 130px;
 	padding-left: 10px;
 }
-.sideMain{
+.sideMain {
 	display: flex;
 	align-items: center;
 	font-size: 2.5rem;
 	font-weight: bold;
 	padding-right: 30px;
 }
-.sideItems{
+.sideItems {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 }
-.sideItem{
+.sideItem {
 	display: flex;
 	gap: 10px;
 	padding: 5px 5px;
 	align-items: center;
 	border-radius: 0;
-	cursor:pointer;
+	cursor: pointer;
 }
-.sideItem:hover{
+.sideItem:hover {
 	background-color: rgba(72, 94, 126, 0.856);
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
@@ -95,11 +96,37 @@ body {
 	gap: 50px;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	margin-bottom: 20px;
+	background-color: transparent;
+}
+.analyticsTab {
+	padding:10px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	gap:10px;
+}
+.analyticsTab img{
+	height: 80px;
+}
+.analyticsTab div:nth-child(1) {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+.analyticsTab div:nth-child(2) {
+	font-size: 1rem;
+	text-align: center;
 }
 .table {
 	grid-column: 2/3;
 	grid-row: 3/4;
 	margin-bottom: 20px;
+
 }
 .other {
 	background-color: transparent;
