@@ -15,7 +15,7 @@ body {
 .container {
 	display: grid;
 	grid-template-columns: 1fr 3fr 1fr;
-	grid-template-rows: 1fr 1.5fr 3fr 0.4fr;
+	grid-template-rows: 1fr 1.5fr 3fr 0.3fr;
 	height: 100%;
 	column-gap: 20px;
 	margin-bottom: 20px;
@@ -35,7 +35,7 @@ body {
 .user {
 	display: flex;
 	align-items: center;
-	gap: 5px;
+	gap: 10px;
 }
 .header img {
 	height: 50px;
@@ -99,15 +99,15 @@ body {
 	background-color: transparent;
 }
 .analyticsTab {
-	padding:10px 0;
+	padding: 10px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	font-size: 2rem;
-	gap:10px;
+	gap: 10px;
 }
-.analyticsTab img{
+.analyticsTab img {
 	height: 80px;
 }
 .analyticsTab div:nth-child(1) {
@@ -126,7 +126,42 @@ body {
 	grid-column: 2/3;
 	grid-row: 3/4;
 	margin-bottom: 20px;
-
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	background-color: transparent;
+	gap: 20px;
+}
+.row,
+.firstRow {
+	text-align: center;
+	align-items: center;
+	border-radius: 0;
+	grid-column: 1/5;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.firstRow {
+	font-size: 1.5rem;
+	border-radius: 10px;
+}
+.firstRow div {
+	background-color: transparent;
+}
+.row {
+	border-radius: 30px;
+	background-color: #336856;
+}
+.notSold {
+	background-color: #792929;
+}
+.row div {
+	border-radius: 0;
+	font-size: 1.1rem;
+	background-color: transparent;
+	border-right: 1px solid white;
+}
+.row div:last-child {
+	border-right: none;
 }
 .other {
 	background-color: transparent;
@@ -135,10 +170,73 @@ body {
 	grid-row: 2/4;
 	display: grid;
 	gap: 20px;
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
-
+.other::-webkit-scrollbar {
+	display: none;
+}
+.content {
+	padding: 0 5px 0 10px;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
+}
+.customer {
+	padding: 0 10px 0 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.customer div:first-child {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 1.4rem;
+}
+.customer div:nth-child(2) {
+	display: flex;
+	gap: 4px;
+}
+.comments {
+	padding: 20px;
+	font-size: 2rem;
+}
+.star {
+	height: clamp(10px, 1vw, 20px);
+}
 .footer {
 	background-color: rgba(43, 57, 77, 0.466);
 	border-radius: 0;
 	grid-column: 1/4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer a {
+	text-decoration: none;
+	color: var(--bright);
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+a:hover {
+	opacity: 0.5;
+}
+.footer img {
+	background-color: transparent;
+	height: 20px;
+}
+@media (max-width: 1400px) {
+	.analytics {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 20px;
+	}
+	.header {
+		padding: 15px 15px;
+	}
 }
