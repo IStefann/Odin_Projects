@@ -104,6 +104,9 @@ font-size: clamp(1rem, 2vw, 1.5rem);
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
+.phone{
+	display: none;
+}
 .analytics {
 	grid-column: 2/3;
 	grid-row: 2/3;
@@ -289,7 +292,7 @@ a:hover {
 }
 @media (max-width:768px)
 {
-	.hamburger, #close, .container{
+	.phone, .hamburger, #close, .container{
 		display: block
 	}
 	.container *{
