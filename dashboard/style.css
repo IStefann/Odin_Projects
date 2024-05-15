@@ -292,7 +292,10 @@ a:hover {
 }
 @media (max-width:768px)
 {
-	.phone, .hamburger, #close, .container{
+	.phone{
+		display: flex;
+	}
+	.hamburger, #close, .container{
 		display: block
 	}
 	.container *{
