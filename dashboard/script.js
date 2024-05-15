@@ -1,7 +1,12 @@
-const noSold = document.querySelectorAll("#noSold");
-const price = document.querySelectorAll("#price");
-const total = document.querySelectorAll("#total");
+const open = document.querySelector(".hamburger");
+const close = document.querySelector("#close");
+let sidebar = document.querySelector(".sidebar");
 
-noSold.forEach(element => {
-    
+open.addEventListener("click", () => {
+	sidebar.classList.remove("off");
+	sidebar.classList.add("on");
+});
+close.addEventListener("click", () => {
+	sidebar.classList.remove("on");
+	sidebar.classList.add("off");
 });
