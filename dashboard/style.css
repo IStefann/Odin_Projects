@@ -250,6 +250,9 @@ a:hover {
 .hamburger{
 	display: none;
 }
+#close{
+	display: none;
+}
 @media (max-width: 1400px) {
 	body {
 		height: 100%;
@@ -286,11 +289,8 @@ a:hover {
 }
 @media (max-width:768px)
 {
-	.hamburger{
+	.hamburger, #close, .container{
 		display: block
-	}
-	.container{
-		display: block;
 	}
 	.container *{
 		border-radius: 0;
@@ -302,7 +302,7 @@ a:hover {
 		background-color: red;
 		height: 100%;
 		grid-template-rows: 90px 1fr 100px;
-
+		translate: 100vw 0;
 	}
 	.on{
 		translate: 0;
